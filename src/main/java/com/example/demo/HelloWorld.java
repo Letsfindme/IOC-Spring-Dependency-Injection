@@ -13,8 +13,17 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class HelloWorld {
 
+    TextWriter text;
+
+    public HelloWorld() {
+
+        text = new TextWriteImp();
+
+    }
+
+
     @RequestMapping("/")
     public String index(){
-        return  "hello world";
+        return  text.WriteText("hi");
     }
 }
