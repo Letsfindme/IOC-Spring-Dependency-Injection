@@ -18,11 +18,6 @@ public class HelloWorld {
     @Autowired
     TextWriter text;
 
-    public HelloWorld(TextWriter text) {
-
-        this.text = text;
-
-    }
 
 
     @RequestMapping("/")
